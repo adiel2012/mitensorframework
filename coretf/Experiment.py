@@ -7,10 +7,13 @@ class Experiment:
         ashape = X.shape;
         num_patterns = len(Y);
         mat = np.zeros((num_classes,num_classes));
+        
         for i in range(num_patterns):
-            probs = num_patterns.probabilities();
-            class_predicted = np.argmax(probs)[0];
+            probs = aclassifier.probabilities(X[i]);
+            class_predicted = np.argmax(probs);
             mat[Y[i],class_predicted] = mat[Y[i],class_predicted] + 1;
+        
+        #print(mat)
         return mat;
     
     
