@@ -1,12 +1,12 @@
 import numpy as np
-from IClassifier import *
-from Experiment import *
+from coretf.IClassifier import *
+from coretf.Experiment import *
 
 class Classifier1(IClassifier):
 #    def __init__(self):
 
     @staticmethod
-    def buildClassifier(data):
+    def buildClassifier(self,x,y):
         pass
     
     @staticmethod

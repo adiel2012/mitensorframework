@@ -2,7 +2,7 @@ class IClassifier:
 #    def __init__(self):
 
 
-    def buildClassifier(self,data):
+    def buildClassifier(self,x,y):
         pass
 
     def probabilities(self,row):
